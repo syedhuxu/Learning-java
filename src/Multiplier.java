@@ -15,8 +15,14 @@ public class Multiplier {
         System.out.print("Enter the number you want to multiply: ");
         base = scanner.nextInt();
 
-        System.out.print("Enter the limit number: ");
+        System.out.print("Enter the limit number (greater than 0): ");
         limit = scanner.nextInt();
+
+        if(limit < 0 || limit == 0 ) {
+            System.out.println("Thappad maru ga mai ksm se ");
+        }
+
+
 
         for(int i = 1; i <= limit; i++){
 
